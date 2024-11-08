@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../image/back.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header, footer {
+    background-color: #518ac2;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+
+}
+
+@media (max-width: 900px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
